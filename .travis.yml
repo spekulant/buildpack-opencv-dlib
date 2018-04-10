@@ -1,0 +1,9 @@
+services:
+    - docker
+
+before_install:
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+
+script:
+  - docker build -t spekulant/buildpackdeps-opencv .
+  - docker push spekulant/buildpackdeps-opencv
