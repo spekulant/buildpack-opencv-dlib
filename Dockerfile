@@ -26,6 +26,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update && apt-get install -y \
   libgraphicsmagick1-dev=1.3.20-3+deb8u2 \
   libatlas-dev=3.10.2-7 \
   libavcodec-dev=6:11.11-1~deb8u1 \
+  libavcodec56=6:11.11-1~deb8u1 \
   libavformat-dev=6:11.11-1~deb8u1 \
   libavdevice-dev=6:11.11-1~deb8u1 \
   libavfilter-dev=6:11.11-1~deb8u1 \
