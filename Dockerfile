@@ -15,7 +15,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update && apt-get install -y \
   python-skimage=0.10.1-2
 
 # Install dlib dependencies
-RUN DEBIAN_FRONTEND=noninteractive apt-get update && apt-get install -y \
+RUN DEBIAN_FRONTEND=noninteractive apt-get update && apt-get install -y --force-yes \
   build-essential=11.7 \
   cmake=3.0.2-1+deb8u1 \
   gfortran=4:4.9.2-2 \
