@@ -12,6 +12,9 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update && apt-get install -y \
   python-matplotlib=1.4.2-3.1 \
   python-skimage=0.10.1-2
 
+# Install pip
+RUN curl https://bootstrap.pypa.io/get-pip.py | python - 'pip==9.0.3'
+
 # Install dlib dependencies
 RUN DEBIAN_FRONTEND=noninteractive apt-get update && apt-get install -y --force-yes \
   build-essential=11.7 \
